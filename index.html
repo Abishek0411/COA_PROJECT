@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instruction Set Processor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="input1" placeholder="Enter 8-bit code 1">
+            <input type="text" id="input2" placeholder="Enter 8-bit code 2">
+            <button onclick="selectOperation('add')">Add</button>
+            <button onclick="selectOperation('subtract')">Subtract</button>
+            <button onclick="selectOperation('multiply')">Multiply</button>
+            <button onclick="selectOperation('divide')">Divide</button>
+            <button onclick="execute()" style="background-color: green;" >Execute</button>
+        </div>
+        <div class="output-container">
+            <div id="information">
+                <h2>Opcode Information:</h2>
+                <div id="opcode-info"></div>
+                <h2>Operand Information:</h2>
+                <div id="operand-info"></div>
+            </div>
+            <div id="output">
+        <div id="output" class="output-container">
+            <h2>Processing:</h2>
+            <div id="processing-output"></div>
+            <h2>Output:</h2>
+            <div id="memory-output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
